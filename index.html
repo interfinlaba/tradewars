@@ -86,7 +86,7 @@
 (function adjustChartHeights(){
   const isMobile = window.matchMedia('(max-width: 768px)').matches;
   document.documentElement.setAttribute('data-device', isMobile ? 'mobile' : 'desktop');
-    const h = isMobile ? '320px' : '480px';
+    const h = isMobile ? '400px' : '480px';
   document.documentElement.style.setProperty('--chart-h', h);
 })();
 
@@ -166,7 +166,7 @@
 (function adjustChartHeights(){
   const isMobile = window.matchMedia('(max-width: 768px)').matches;
   document.documentElement.setAttribute('data-device', isMobile ? 'mobile' : 'desktop');
-    const h = isMobile ? '320px' : '480px';
+    const h = isMobile ? '400px' : '480px';
   document.documentElement.style.setProperty('--chart-h', h);
 })();
 
@@ -246,7 +246,7 @@
 (function adjustChartHeights(){
   const isMobile = window.matchMedia('(max-width: 768px)').matches;
   document.documentElement.setAttribute('data-device', isMobile ? 'mobile' : 'desktop');
-    const h = isMobile ? '320px' : '480px';
+    const h = isMobile ? '400px' : '480px';
   document.documentElement.style.setProperty('--chart-h', h);
 })();
 
@@ -326,7 +326,7 @@
 (function adjustChartHeights(){
   const isMobile = window.matchMedia('(max-width: 768px)').matches;
   document.documentElement.setAttribute('data-device', isMobile ? 'mobile' : 'desktop');
-    const h = isMobile ? '320px' : '480px';
+    const h = isMobile ? '400px' : '480px';
   document.documentElement.style.setProperty('--chart-h', h);
 })();
 
@@ -1356,8 +1356,8 @@ html[data-device="mobile"] .card { box-shadow: 0 8px 22px rgba(0,0,0,.10); }
 
 <style>
 @media (max-width: 768px) {
-  #finalChart { height: 240px !important; }
-  #trustChart { max-height: 180px !important; }
+  #finalChart { height: 320px !important; }
+  #trustChart { max-height: 240px !important; }
 }
 </style>
 
@@ -2749,6 +2749,10 @@ html[data-theme="auto"]:not([data-theme="light"]) .settings-footer {
   margin-bottom: 48px;
 }
 
+.start-header .game-badge {
+  margin-bottom: 24px;
+}
+
 .game-badge {
   display: inline-flex;
   align-items: center;
@@ -3033,8 +3037,13 @@ html[data-theme="auto"]:not([data-theme="light"]) .settings-footer {
     padding: 20px 16px;
   }
   
+  .start-header .game-badge {
+    margin-bottom: 32px;
+  }
+  
   .start-title {
     font-size: 32px;
+    margin-top: 16px;
   }
   
   .start-subtitle {
@@ -3547,7 +3556,7 @@ html[data-theme="auto"]:not([data-theme="light"]) .settings-footer {
   </section>
   <div id="toast" class="toast"></div>
 
-  <div class="small muted center" style="margin-top:16px">Международная Финансовая Лаборатория (v5.0)</div>
+  <div class="small muted center" style="margin-top:16px; text-align: center; width: 100%;">Международная Финансовая Лаборатория (v5.0)</div>
 
 <!-- Easter egg modal -->
 <div id="eggMask" role="dialog" aria-modal="true" aria-label="About the developer">
@@ -13419,7 +13428,7 @@ toast(i18n('readyStart'));
 (function adjustChartHeights(){
   const isMobile = window.matchMedia('(max-width: 768px)').matches;
   document.documentElement.setAttribute('data-device', isMobile ? 'mobile' : 'desktop');
-    const h = isMobile ? '320px' : '480px';
+    const h = isMobile ? '400px' : '480px';
   document.documentElement.style.setProperty('--chart-h', h);
 })();
 
@@ -14056,7 +14065,7 @@ toast(i18n('readyStart'));
 (function adjustChartHeights(){
   const isMobile = window.matchMedia('(max-width: 768px)').matches;
   document.documentElement.setAttribute('data-device', isMobile ? 'mobile' : 'desktop');
-    const h = isMobile ? '320px' : '480px';
+    const h = isMobile ? '400px' : '480px';
   document.documentElement.style.setProperty('--chart-h', h);
 })();
 
@@ -14748,7 +14757,7 @@ toast(i18n('readyStart'));
 (function adjustChartHeights(){
   const isMobile = window.matchMedia('(max-width: 768px)').matches;
   document.documentElement.setAttribute('data-device', isMobile ? 'mobile' : 'desktop');
-    const h = isMobile ? '320px' : '480px';
+    const h = isMobile ? '400px' : '480px';
   document.documentElement.style.setProperty('--chart-h', h);
 })();
 
@@ -14772,7 +14781,7 @@ toast(i18n('readyStart'));
         const parent = cv.closest('.panel') || cv.parentElement;
         if (!parent) return;
         // Высота контейнера: мобильный/десктоп
-        parent.style.setProperty('--chart-h', mobile ? '260px' : '360px');
+        parent.style.setProperty('--chart-h', mobile ? '320px' : '360px');
       });
       // Сообщить Chart.js, что контейнер изменился
       if (window.Chart) {
@@ -14863,7 +14872,7 @@ toast(i18n('readyStart'));
 (function adjustChartHeights(){
   const isMobile = window.matchMedia('(max-width: 768px)').matches;
   document.documentElement.setAttribute('data-device', isMobile ? 'mobile' : 'desktop');
-    const h = isMobile ? '320px' : '480px';
+    const h = isMobile ? '400px' : '480px';
   document.documentElement.style.setProperty('--chart-h', h);
 })();
 
@@ -14965,7 +14974,7 @@ document.addEventListener('DOMContentLoaded', function(){
 (function adjustChartHeights(){
   const isMobile = window.matchMedia('(max-width: 768px)').matches;
   document.documentElement.setAttribute('data-device', isMobile ? 'mobile' : 'desktop');
-    const h = isMobile ? '320px' : '480px';
+    const h = isMobile ? '400px' : '480px';
   document.documentElement.style.setProperty('--chart-h', h);
 })();
 
@@ -15011,7 +15020,7 @@ document.addEventListener('DOMContentLoaded', function(){
     Chart.defaults.scale.grid.display = false;
 
     // Высота графика на мобильных (через CSS-переменную)
-    document.documentElement.style.setProperty('--chart-h', '220px');
+    document.documentElement.style.setProperty('--chart-h', '300px');
 
     // Если у тебя есть конкретный id контейнера графика — задай высоту явно:
     var canvases = document.querySelectorAll('canvas');
@@ -15037,12 +15046,28 @@ document.addEventListener('DOMContentLoaded', function(){
   /* Mobile styles are now handled in the GPT-5 style section above */
 }
 canvas{ width:100% !important; max-width:100% !important; display:block; }
+
+/* Улучшенные стили для графиков на мобильных устройствах */
+@media (max-width: 768px) {
+  canvas {
+    height: 300px !important;
+    min-height: 300px !important;
+  }
+  
+  .chart-container {
+    min-height: 320px;
+  }
+  
+  .chart-content {
+    min-height: 300px;
+  }
+}
 </style>
 <script id="v32-mobile-fixes">
 (function v32ChartTune(){
   var isMobile = window.matchMedia('(max-width: 768px)').matches;
   if (isMobile) {
-    document.documentElement.style.setProperty('--chart-h', '220px');
+    document.documentElement.style.setProperty('--chart-h', '300px');
     if (window.Chart && Chart.defaults){
       Chart.defaults.maintainAspectRatio = false;
       Chart.defaults.animation = false;
